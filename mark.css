@@ -1,0 +1,326 @@
+.tpban, .lfban, .btban { background:rgba(0,0,0,0.1); position:relative; margin:10px 0 0; min-height:40px; color:white;}
+.lfban {min-height:400px; width:260px;} 
+.tpban-close, .lfban-close, .btban-close {position:absolute; color:rgba(255,255,255,0.25); text-decoration:none; font-size:20px; line-height:100%; right:15px; top:50%; margin-top:-10px; cursor:pointer;}
+.tpban-close:hover, .lfban-close:hover, .btban-close:hover {color:rgba(255,255,255,0.3);}
+.lfban-close {top:5px; right:10px; margin-top:0px;}
+
+#brmrk_tags {display:none;}
+#brmrk_pup {display:none;}
+
+@media screen and (max-width: 800px) {
+.tpban-close, .lfban-close, .btban-close {color:rgba(255,255,255,0.5); top:5px; right:7px;  margin-top:0px;}
+.tpban-close:hover, .lfban-close:hover, .btban-close:hover {color:rgba(255,255,255,0.75);}
+	
+}
+
+/*-------BOTTOM-баннер-------------*/
+.btban {position:fixed; left:0; right:0; bottom:0; z-index:1000; background:rgba(10,70,120,1); background: linear-gradient(-45deg, #00538a, #3dcef2); -moz-animation: Gradient 25s ease infinite;	animation: Gradient 15s ease infinite;}
+.buybottomtext, .buybottomtext:hover {  padding:25px 3%; text-align:center; text-decoration:none; display:block; color:white; line-height:120%; font-size:19px; font-weight:300; color:rgba(255,255,100,1);}
+
+@media screen  and (max-width: 800px) {.buybottomtext, .buybottomtext:hover {font-size:15px; line-height:120%; padding:10px 2%;} }
+
+/*-------SIDE-баннер-------------*/
+ #sideban {}
+ 
+.mrkbnr_lft .paywallblock {margin:20px 5px; background:rgba(50,100,200,0.1);}
+.mrkbnr_lft .paywallhead, .mrkbnr_lft .paywallhead:hover {background:rgba(40,70,110,1); font-size: 16px; padding:10px; color:#66d9ff;}
+.mrkbnr_lft .paywallblock:hover .paywallhead{color:yellow}
+.mrkbnr_lft .paywallcontent  {font-size: 13px; padding:10px; }
+
+.promoside {position:relative; display:block; border:none; border-bottom:0px solid rgba(10,30,50,0.1); text-align:center; background:white; padding-bottom:10px; margin-bottom:50px;}
+.promosideimg {padding:0; margin:0px 0px; background-color:rgba(70,180,180,1); background-repeat:no-repeat; background-position: center 10px; background-size:cover; color:white; font-size:15px; text-align:center; position:relative; height: 4px;}
+.promosidetext { font-size:17px; padding:20px 10px 10px; font-weight:300; line-height:150%; border-top:7px solid red;}
+/*.promosidebtn .bbtn{border-bottom:2px solid rgba(20,130,80,1); position:relative; z-index:5;}
+.promosidebtn .bbtn:hover{border-bottom:2px solid rgba(0,100,50,1);}*/
+
+.promosidebtn .bbtn {border-radius:18px; padding:10px 25px; box-shadow: 0px 3px 10px rgba(0,0,0,0.4)}
+.promosidebtn .bbtn:hover { box-shadow: 0px 3px 13px rgba(0,0,0,0.5)}
+
+.promosidefon {position:absolute; top:0; left:0; right:0; bottom:0; z-index:4;}
+
+
+
+/*-------TOP-баннер-------------*/
+#profbanner, #profbanner:hover { display:inline-block;  margin:0; color:rgb(37, 54, 150); text-decoration:none; line-height:140%; font-family: 'Ubuntu', sans-serif; font-size:30px; padding:10px 1% 10px; text-align:center;   letter-spacing: 3px; transition: All 0.5s ease;}
+#profbanner:hover {color:rgb(37, 54, 180); transition: All 0.5s ease;}
+
+/*
+#profbanner {font-weight:400; text-decoration:none;  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); background-repeat: no-repeat;  background-size: 100% 0.4em; background-position: 0 88%;  transition: background-size 0.25s ease-in; }
+#profbanner:hover {background-size: 100% 92%;}
+*/
+
+#profbannerwrap {position:relative; margin:0px auto; text-align:center; background:rgba(240,250,255,1); overflow:hidden; padding:25px 2%; }
+
+#profbannercontent {position:relative; z-index:4; font-weight:800;}
+#profbannercontent em {font-style:normal; color:yellow;}
+#profbannercontent b {}
+.tpbnclose {position:absolute; top:2px; right:5px; line-height:100%; font-size: 24px; text-decoration:none; color:white; z-index:5; cursor:pointer;}
+.tpbnclose:hover {  color:yellow}
+
+#profbanner .d1 {display:none; position:absolute; bottom:0; left:0; top:0; right:0; background: rgba(190,70,70,0.1);z-index:1;}
+#profbanner .d3 {position:absolute; top:0; left:0;width: 0%; height: 0; border-top: 850px solid rgba(70,130,210,0.05); border-right: 45vw solid transparent;  z-index:3;}
+
+
+@media screen and (max-width: 800px) {
+#profbannerwrap {margin:0px auto 5px; padding:10px 2%;}
+#profbanner, #profbanner:hover {font-size:20px; margin:0; letter-spacing: 2px;  background-image:none; padding:5px 1%;}
+
+#profbannercontent b {font-size:15px;}
+#profbanner strong {display:block;}
+}
+
+
+/*-------Попапы-------------*/
+.doyouwant {display:none; position:absolute; z-index:9999; top:0; left:0; right:0; bottom:0;}
+.doyouwant-fon {position:fixed; z-index:10000; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.75)}
+.doyouwant-content {position:fixed; z-index:10001; top:10%; left:50%; right:0; width:850px; padding:25px; margin-left:-450px; background:white; border-radius:5px;  box-shadow:0 0 50px rgba(0,0,0,0.5); text-align:center; background: linear-gradient(-45deg, #00538a, #3dcef2); -moz-animation: Gradient 25s ease infinite;	animation: Gradient 15s ease infinite;}
+.doyouwant-close { color:white; text-align:right; margin:-25px -25px 25px; padding:11px 25px 17px; font-size:30px; line-height:100%; font-weight:100; border-top-left-radius:5px; border-top-right-radius:5px;}
+.doyouwant-close span, .doyouwant-close strong  {cursor:pointer; color:rgba(255,255,255,0.6)}
+.doyouwant-close span:hover, .doyouwant-close strong:hover {color:rgba(255,255,255,1)}
+
+.doyouwant-img, .doyouwant-text {display:inline-block; vertical-align:middle; width:50%;}
+.doyouwant-img  .bbtn {padding:0; margin:0;}
+
+.doyouwant-img img {width:80%; background: linear-gradient(-45deg, #6495ed, #00538a, #3dcef2, #6aebc8); background:none;	-moz-animation: Gradient 15s ease infinite;	animation: Gradient 15s ease infinite;}
+
+@-webkit-keyframes Gradient {0% {background-position: 0% 50%}50% {background-position: 100% 50%}100% {background-position: 0% 50%}}
+@-moz-keyframes Gradient {0% {	background-position: 0% 50%}50% {	background-position: 100% 50%}	100% {	background-position: 0% 50%	}}
+@keyframes Gradient {0% {background-position: 0% 50%}50% {	background-position: 100% 50%}100% {background-position: 0% 50%}}
+
+
+.doyouwant-text h3 {font-size:19px; font-weight:300; line-height:150%; margin:0 0 20px !important; padding:0; font-family: 'Roboto', sans-serif; color:white;}
+.doyouwant-text h3 b {font-size:29px; display:block; margin-bottom:30px; font-family: 'Ubuntu', sans-serif; font-weight:500;line-height:120%;}
+.doyouwant-text h3 span {font-weight:500; color:rgba(100,210,160,1);}
+
+.doyouwant-text .bbtn {border-radius:14px; min-width:150px;   box-shadow: 0px 3px 0px rgba(0,0,0,0.7)}
+.doyouwant-text .bbtn:hover { box-shadow: 0px 3px 0px rgba(0,0,0,0.8)}
+
+.doyouwant-text .bbtn, .doyouwant-text .bbtn:hover { vertical-align:middle; padding:15px 35px; margin:20px auto;  color:white; text-decoration:none; font-size:20px; box-shadow:1px 5px 20px rgba(0,0,0,0.25); border-radius:35px; -webkit-transition: All 0.2s ease; -moz-transition: All 0.2s ease; -o-transition: All 0.2s ease; -ms-transition: All 0.2s ease; transition: All 0.2s ease; font-weight: 300;  position:relative; z-index:2; border:none; line-height:140%;}
+.doyouwant-text .bbtn:hover {color:white; box-shadow:1px 1px 1px rgba(0,0,0,0.25); -webkit-transition: All 0.2s ease; -moz-transition: All 0.2s ease; -o-transition: All 0.2s ease; -ms-transition: All 0.2s ease; transition: All 0.2s ease; border:none; cursor:pointer;}
+
+.doyouwant-text input, #doyouwant .doyouwant-text input#email, #doyouwant .doyouwant-text input#mailname {display:block; margin:3px 0px; padding:15px 14px; height:auto; width:100%; box-sizing:border-box; font-size:18px;}
+.doyouwant-text input[type=submit] {width:100%; text-align:center; padding:10px; border:none;  color:white; background:rgba(70,130,180,1); padding:13px 25px; border-radius:4px; font-size:22px; text-align:center; min-width:30%; border-bottom:4px solid rgba(20,80,130,1); font-weight:400; cursor:pointer;}
+.doyouwant-text input[type=submit]:hover {border-bottom:4px solid rgba(20,50,80,0.8); background:rgba(60,120,170,1);}
+.agreeinbanner {font-size:10px; padding-bottom:10px;}
+
+.doyouwant-text input::-webkit-input-placeholder {color:silver;}
+.doyouwant-text input:-moz-placeholder {color:silver;}
+.result_reg {color:yellow}
+
+#sendgift2me {margin:20px 0;}
+#sendgift2me input {display:inline-block; vertical-align:middle; padding:14px 10px 14px 20px; margin:10px 1px;  background-color:white; text-decoration:none; font-size:20px; box-shadow:1px 5px 20px rgba(0,0,0,0.25); border-radius:25px; -webkit-transition: All 0.2s ease; -moz-transition: All 0.2s ease; -o-transition: All 0.2s ease; -ms-transition: All 0.2s ease; transition: All 0.2s ease; font-weight: 300;  position:relative; z-index:2; border:none; line-height:140%; width:240px;}
+#sendgift2me .bbtn { padding:14px 10px; margin:10px 1px;}
+
+@media screen and (max-width: 910px) {
+.doyouwant-content {position:fixed; top:0; left:5%; right:auto; width:90%; box-sizing:border-box; margin:50px auto 0; }
+}
+
+@media screen and (max-width: 700px) {
+.doyouwant-img, .doyouwant-text {display:block; width:auto; }
+.doyouwant-img {display:none;}
+.doyouwant-img img {width:50%; max-width:150px;}
+.doyouwant-text h3 {font-size:16px; margin-bottom:8px; line-height:130%;}
+.doyouwant-text h3 b {font-size:24px; margin-bottom:20px; }
+.doyouwant-text input, #doyouwant .doyouwant-text input#email, #doyouwant .doyouwant-text input#mailname  {margin:2px 0px; padding:10px 10px;}
+.doyouwant-text .bbtn, .doyouwant-text .bbtn:hover {padding:15px 20px;  font-size:18px;}
+}
+
+
+
+/*-------Интерактивный топ-баннер (8 курсов)-------------*/
+
+#synbanner {display:inline-block; margin:20px auto; background: url("main-banner.jpg") steelblue center center; color:black; position:relative; text-align:center; font-family:verdana; background-size:cover; background-repeat:no-repeat; }
+#synbannerfon {position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,30,50,0.75); z-index:0;}
+
+#synbanner .one-man-wrap {display:inline-block; vertical-align:middle;}
+#synbanner .one-man {display:inline-block; vertical-align:middle; position:relative; text-align:left; color:black; border-left:1px solid rgba(255,255,255,0.85); height:120px; white-space: normal;}
+#synbanner .one-man img {width:120px; background:rgba(70,130,180,1);}
+#synbanner .one-man:nth-child(2n) img{background:rgba(70,130,150,1);}
+#synbanner .one-man:nth-child(3n) img{background:rgba(100,130,180,11);}
+#synbanner .one-man .descript, #synbanner .one-man:hover .descript {position:absolute; display:none; background: white; padding:10px 10px 13px; top:-20px; left:-20px; z-index:1000; text-align:center; font-size:11px; box-shadow:0 0 10px black; text-decoration:none; line-height:100%; color:rgba(0,0,0,0.6);}
+#synbanner .one-man .descript b {display:block; font-size:12px; padding:0; margin:5px 0 0; color:rgba(0,0,0,1);}
+#synbanner .one-man .descript span {text-decoration:none; color:steelblue;}
+#synbanner .one-man .descript img {width:140px; }
+#synbanner .one-man:hover .descript{display:block;}
+
+#synbanner .descript-1 {display:inline-block; vertical-align:middle; color:white; font-size:18px; margin:0px 0 0; padding:30px; font-weight:bold; text-decoration:none; text-align:center; position:relative;}
+#synbanner .descript-1 em {font-style:normal;}
+
+@media screen and (max-width: 1800px) {
+#main #synbanner {text-align:center; padding:0px;}
+#main #synbanner .descript-1 {display:block; width:auto; padding:20px;}
+#main #synbanner .descript-1 b, #synbanner .descript-1 em{display:none; }
+}
+
+@media screen and (max-width: 1400px) {
+#synbanner {text-align:center; padding:0px;}
+#synbanner .descript-1 {display:block; width:auto; padding:20px;}
+#synbanner .descript-1 b, #synbanner .descript-1 em{display:none; }
+}
+
+@media screen and (max-width: 1200px) {
+#main #synbanner {height:auto; display:block;}
+#main #synbanner .one-man-wrap {display:none; }
+#main #synbanner:hover #synbannerfon {background:rgba(0,30,50,0.85);}
+#main #synbanner .one-man {display:none; }
+#main #synbanner .descript-1  {white-space: normal; display:block; font-size:17px; max-width:1040px; width:100%; position:relative;  text-align:center; margin: 0 0; padding:35px 5%; width:auto; height:auto;}
+#main #synbanner .descript-1 em {display:inline;}
+}
+
+@media screen and (max-width: 900px) {
+#synbanner {height:auto; display:block; margin:0px auto;}
+#synbanner .one-man-wrap {display:none; }
+#synbanner:hover #synbannerfon {background:rgba(0,30,50,0.85);}
+#synbanner .one-man {display:none; }
+#synbanner .descript-1  {white-space: normal; display:block; font-size:16px; max-width:1040px; width:100%; position:relative;  text-align:center; margin: 0 0; padding:35px 5%; width:auto; height:auto;}
+#synbanner .descript-1 em {display:inline;}
+}
+
+
+/*-------Баннеры - скидка за скорость-------------*/
+
+#doyouwant.timersale .timesale {max-width:200px; padding:20px 10px; background:rgba(150,10,0,0.25); color:yellow; color:balck; margin:10px auto; line-height:100%; font-size:36px;}
+#doyouwant.timersale .doyouwant-img img {background:rgba(70,130,180,0.2);}
+#doyouwant.timersale .doyouwant-text .bbtn {border-radius:25px;}
+#doyouwant.timersale .doyouwant-text h3 em {color:rgba(139,0,0,1); font-style:normal; font-weight:bold;}
+
+/*-Когда закрыт-*/
+#doyouwant.timersale.closetimer .doyouwant-fon  {display:none;}
+#doyouwant.timersale.closetimer .doyouwant-content { bottom:0%; top:auto; left:0%; right:0%; margin:auto; width:auto; background:rgba(0,50,90,0.95); color:white; border-radius:0; padding:0; box-shadow:0 0 10px rgba(0,0,0,0.25);}
+#doyouwant.timersale.closetimer .doyouwant-close {display:none; background:none; position:absolute;  padding:10px; top:0px; right:10px; padding:0; margin:0;}
+
+#doyouwant.timersale.closetimer .doyouwant-img  {width:20%; display:inline-block; vertical-align:bottom; position:relative; font-size:21px; text-align:left; }
+#doyouwant.timersale.closetimer .doyouwant-img img {position:absolute; height:200px; bottom:0; width:auto; background:none;}
+#doyouwant.timersale.closetimer .doyouwant-img b {font-size:130%; }
+
+#doyouwant.timersale.closetimer .doyouwant-text {width:75%; display:inline-block; vertical-align:top; padding:0; text-align:left;}
+#doyouwant.timersale.closetimer .doyouwant-text .bbtn {display:inline-block; vertical-align:middle;}
+#doyouwant.timersale.closetimer .doyouwant-text h3 {display:inline-block; vertical-align:middle; margin-right:5%;}
+#doyouwant.timersale.closetimer .doyouwant-text h3 em {color:rgba(255,100,100,1)}
+
+#doyouwant.timersale.closetimer .timesale {position:absolute; top:-65px; right:5%; padding:10px; background:rgba(180,10,0,0.75); color:yellow;}
+
+
+@media screen and (max-width: 1000px) {
+#doyouwant.timersale.closetimer .doyouwant-img {display:none; }
+#doyouwant.timersale.closetimer .doyouwant-text {display:block; width:auto; padding:20px; text-align:center; background:none;}
+#doyouwant.timersale.closetimer .doyouwant-text h3  {display:block;}
+#doyouwant.timersale.closetimer .doyouwant-text .bbtn {border-radius:25px; padding:8px 20px; font-size:18px;}
+#doyouwant.timersale.closetimer .doyouwant-close {display:block;}
+}
+
+
+
+
+
+
+/*-Side banner-*/
+
+#brmrk_lb {position: sticky; top: 0;}
+
+.advice-box {
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 8px;
+	padding: 30px 20px;
+	text-align: center;
+	background-color:white;
+}
+
+.advice-box__title {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+.advice-box__text {
+	margin: 0;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 30px;
+}
+
+.advice-box__button {
+	display: inline-block;
+	color: #fff;
+	padding: 14px 30px;
+	border-radius: 40px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+	background-color: #21D4FD;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+	box-shadow: 0 1px 6px rgba(33, 212, 253, 0.15), 0 1px 30px rgba(183, 33, 255, 0.25);
+	transition: all .18s ease-in;
+}
+
+.advice-box__button:hover {
+	color: #fff;
+	box-shadow: 0 1px 6px rgba(33, 212, 253, 0.15), 0 1px 30px rgba(183, 33, 255, 0.45);
+}
+
+.advice-box__close {
+	font-size: 0px;
+	position: absolute;
+}
+
+#left {
+	/*overflow: initial !important;*/
+}
+
+@media screen and (max-width: 801px) {
+	
+#brmrk_lb {position: static; top: auto;}
+
+.advice-box {
+	position: fixed;
+	z-index: 3;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: auto;
+	background-size: auto;
+	text-align: left;
+	color: #292626;
+	padding: 20px 20px 14px;
+}
+
+.advice-box .advice-box__title {
+	font-size: 18px;
+	margin-bottom: 2px;
+}
+
+.advice-box .advice-box__text {
+	font-size: 15px;
+	line-height: 22px;
+	margin-bottom: 14px;
+}
+
+.advice-box .advice-box__button {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-image: linear-gradient(19deg, #00bfea 0%, #B721FF 100%);
+}
+
+.advice-box__close {
+	font-weight:200;
+	position: absolute;
+    padding: 3px 10px;
+    font-size: 22px;
+    top: 0px;
+    right: 0;
+    cursor: pointer;
+    line-height: 100%;
+	color:rgba(255,255,255,0.6);
+}
+
+.advice-box__close svg {
+	fill: #d482fb;
+}
+
+
+}
