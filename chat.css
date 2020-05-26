@@ -1,0 +1,55 @@
+/*-------------------------------*/
+/*-----------Новый Чат---------------*/
+/*-------------------------------*/
+
+#ourchat input:focus, #ourchat textarea:focus{outline:none;}
+#ourchat a img {border:none; outline:none;}
+#ourchat textarea#chat_msg_area {outline:none;  }
+#ourchat #chat_msg_area::-webkit-input-placeholder { font-family: 'Roboto', sans-serif; font-size: 18px; font-weight:300; line-height:100%;}
+
+.ourchat {display:none; position:fixed; top:0; left:0; bottom:0; right:0; z-index:1000000000000000000000000000000000000000000000000;}
+#ourchatfon {position:absolute; top:0; left:0; bottom:0; right:0; background:rgba(0,10,20,0.8)}
+
+#ourchatwrapper {position:relative; background:steelblue; background: linear-gradient(-45deg, rgba(0, 149, 139, 1), rgba(0, 204, 255, 1)); margin:10vh auto; padding:0; max-width:1000px; box-shadow:0 0 15px rgba(0,0,0,0.35);}
+
+#ourchatwrappertop {position:relative; background:rgba(255,255,255,0.9); color:rgba(0,0,0,0.75); padding:10px 5px 5px 10px; font-size:18px;  line-height:100%; font-weight:400;}
+#ourchatwrappertop span {display:block; font-size:12px; color:rgba(0,0,0,0.35); font-weight:500;}
+.chatmenu {position:absolute; right:0px; top:7px; padding:9px 18px; cursor:pointer; font-size:25px;}
+.chatmenu:hover {background:rgba(0,0,0,0.0); color:darkred;}
+
+#ourchatwrappermiddle {min-height:350px; max-height:450px; overflow:auto;}
+#ourchatwrappermiddle h3 {width:100px; background:rgba(0,0,0,0.3); color:white; margin:10px auto; border-radius:10px; font-size:14px; text-align:center; padding:5px; font-weight:400;}
+.mymeschat, .youmeschat {  margin:5px 10px 5px 50px; text-align:right; max-width: calc(100% - 55px); overflow:hidden;}
+.youmeschat {margin:5px 50px 5px 10px; text-align:left;  }
+.meschatin {display:inline-block;  border-radius:5px;  padding:10px; position:relative; font-size:16px;}
+.youmeschat .meschatin {background:rgba(255,255,255,0.95); padding-right:25px;}
+.mymeschat .meschatin {background:rgba(215,255,235,0.95);}
+.youmeschat .meschatin span.chattimesend, .mymeschat .meschatin span.chattimesend {position:absolute; right:3px; bottom:3px; color:rgba(0,0,0,0.25);  font-size:8px; font-weight:600; line-height:100%;}
+.mymeschat .meschatin span {}
+.meschattext {text-align:left; }
+.repchattext {text-align:left; border-left:2px solid rgba(70,180,130,1); padding: 0 0 0 5px; font-size:80%; margin-left:-15px;}
+
+#ourchatwrapperbot {position:relative; background:rgba(255,255,255,0.9); padding:1px;}
+#ourchatwrapperbot textarea {background:rgba(255,255,255,1) !important; border:none !important;  min-height:45px !important; height:45px; display:block !important; min-width:100%; max-width:100%;font-family: 'Roboto', sans-serif; font-weight:300; line-height:100%; padding: 13px 50px 5px 8px !important; font-size: 18px; box-sizing:border-box;}
+#ourchatwrapperbot .chataddfile {position:absolute; right:5px; bottom:5px; width:50px; height:38px; background:rgba(0,0,0,0.06); -webkit-transition: All 0.2s ease;  cursor:pointer; font-size:20px; color:rgba(70,130,180,0.9); border-radius:3px;}
+#ourchatwrapperbot .chataddfile:hover {-webkit-transition: All 0.2s ease; background:rgba(70,130,180,0.8); color:white;}
+#ourchatwrapperbot .chataddfile i {position:absolute; top:50%; margin-top:-10px; right:15px;}
+
+#ourchatwrapperbot .filelabel {position:absolute; right:62px; bottom:9px; background:rgba(0,0,0,0); -webkit-transition: All 0.2s ease;  cursor:pointer;  padding:0 0px;}
+#ourchatwrapperbot .filelabel input {display:none;}
+#ourchatwrapperbot .filelabel i {cursor:pointer; font-size:22px; color:rgba(0,0,0,0.3); transform: scale(1, -1);}
+#ourchatwrapperbot .filelabel:hover i{color:rgba(0,0,0,0.6);}
+
+@media screen and (max-width: 600px) {
+#ourchatwrapper {margin:0 auto; position:absolute; top:0; left:0; bottom:0; right:0; }
+#ourchatwrappertop {height:50px; box-sizing: border-box;}
+#ourchatwrappermiddle {height: calc(100vh - 92px); min-height:none; max-height:none;}
+#ourchatwrapperbot {position:absolute; right:0; left:0; bottom:0;}
+
+#ourchatwrapperbot .chataddfile {height:35px;}
+
+.mymeschat,.youmeschat {margin:5px 5px 5px 45px; overflow-x:auto;}
+.youmeschat {margin:5px 45px 5px 5px;}
+
+
+}
